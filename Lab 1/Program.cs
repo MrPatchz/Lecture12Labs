@@ -1,4 +1,4 @@
-﻿/// Homework No.__ Exercise No.__
+﻿/// Lab No.12 Project No.1
 /// File Name:     Lab1.cs
 /// @author:       Jacques Zwielich
 /// Date:          Nov. 23, 2020
