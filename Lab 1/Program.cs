@@ -1,4 +1,19 @@
-﻿using System;
+﻿/// Homework No.__ Exercise No.__
+/// File Name:     Lab1.cs
+/// @author:       Jacques Zwielich
+/// Date:          Nov. 23, 2020
+///
+/// Problem Statement: Read text files and report the entered name and how popular it was
+///    
+/// Overall Plan (step-by-step, how you want the code to make it happen):
+/// 1. Create a struct called "name" with rank, and uses
+/// 2. Create a dictionary object that has a name as a key and a name struct as the value
+/// 3. Read all elements and parse the info using the space in between the words
+/// 4. Ask the user for a name they would like to search
+/// 5. If the name exists we print out the names uses and its rank
+/// 6. If it does not we say its rank is 0 with 0 uses
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -103,11 +118,12 @@ namespace Lab_1
             {
                 boyReturn = new name(0, 0);
             }
-            
+            girlFile.Close();
+            boyFile.Close();
             Console.Out.WriteLine("The boy name " + choice + " is ranked " + boyReturn.rank + " with " + boyReturn.uses + " uses." );
             Console.Out.WriteLine("The girl name " + choice + " is ranked " + girlReturn.rank + " with " + girlReturn.uses + " uses.");
         }
-
+        
         
     }
 }
